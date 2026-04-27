@@ -123,8 +123,10 @@ STATIC_ROOT = BASE_DIR / 'collected_static'
 # Django будет копировать все статические файлы в директорию collected_static
 
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
 ]
+
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
