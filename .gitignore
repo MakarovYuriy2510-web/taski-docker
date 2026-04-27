@@ -133,3 +133,5 @@ frontend/node_modules
 echo "backend/packages/" >> .gitignore
 echo "*.whl" >> .gitignore
 echo "transferring" >> .gitignore
+
+*.whl
