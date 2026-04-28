@@ -1,3 +1,5 @@
+"""DockSTRING."""
+
 import os
 from pathlib import Path
 
@@ -122,11 +124,8 @@ STATIC_ROOT = BASE_DIR / 'collected_static'
 # Теперь при вызове команды python manage.py collectstatic
 # Django будет копировать все статические файлы в директорию collected_static
 
-
-
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
 ]
-
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
