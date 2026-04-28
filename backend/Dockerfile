@@ -14,6 +14,7 @@ WORKDIR /app
 RUN pip install gunicorn==25.3.0 
 
 COPY requirements.txt .
+
 RUN pip install -r requirements.txt --no-cache-dir
 
 # Выполнить в текущей директории команду терминала
