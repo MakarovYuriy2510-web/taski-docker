@@ -14,10 +14,8 @@ WORKDIR /app
 RUN pip install gunicorn==25.3.0 
 
 COPY requirements.txt .
+RUN pip install -r requirements.txt --no-cache-dir
 
-COPY packages /packages
-
-RUN pip install --no-index --find-links=/packages -r requirements.txt
 # Выполнить в текущей директории команду терминала
 # для установки зависимостей.
 ##RUN pip install -r requirements.txt --no-cache-dir
